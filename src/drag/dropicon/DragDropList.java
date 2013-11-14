@@ -90,7 +90,7 @@ public class DragDropList extends JFrame{
         JList.DropLocation dl = (JList.DropLocation) support.getDropLocation();
         int index = dl.getIndex();
         
-        String[] data = line.split(".");
+        String[] data = line.split(",");
         for(String item: data){
             if(!item.isEmpty()){
                 model.add(index++,item.trim());
