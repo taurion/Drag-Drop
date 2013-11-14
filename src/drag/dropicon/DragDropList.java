@@ -24,7 +24,7 @@ import javax.swing.TransferHandler;
  */
 public class DragDropList extends JFrame{
     
-    JTextField field;
+    JTextField campo;
     DefaultListModel model;
     
     public DragDropList(){
@@ -42,11 +42,11 @@ public class DragDropList extends JFrame{
         list.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         list.setTransferHandler(new ListHandler());
         
-        field = new JTextField("");
-        field.setPreferredSize(new Dimension(150,25));
-        field.setDragEnabled(true);
+        campo = new JTextField("");
+        campo.setPreferredSize(new Dimension(150,25));
+        campo.setDragEnabled(true);
         
-        panel.add(field);
+        panel.add(campo);
         pane.getViewport().add(list);
         panel.add(pane);
         
